@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}JavaScript{% endblock title %}
+{% block list_title %}JavaScript General Facts{% endblock list_title %}
+{% block items %}
+<li>
+    <strong>Programming Language:</strong> JavaScript (JS) is a high-level, interpreted programming language used primarily for adding interactivity to web pages.
+</li>
+<li>
+    <strong>Client-Side Scripting:</strong> JS executes on the client-side (in the browser), allowing dynamic manipulation of HTML and CSS, handling user interactions, and performing calculations.
+</li>
+<li>
+    <strong>Event-Driven and Asynchronous:</strong> JS is event-driven, responding to user actions (like clicks and keystrokes). It also supports asynchronous programming, enabling non-blocking operations like AJAX requests.
+</li>
+{% endblock items %}
+
+{% block links %}
+<li><a href="{% url 'HTML' %}">HTML</a></li>
+<li><a href="{% url 'CascadingStyleSheets' %}">Cascading Style Sheets</a></li>
+{% endblock links %}

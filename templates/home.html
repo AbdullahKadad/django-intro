@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}HTML{% endblock title %}
+{% block list_title %}HTML General Facts{% endblock list_title %}
+{% block items %}
+<li>
+    <strong>Markup Language:</strong> HTML (HyperText Markup Language) is a markup language used to structure content on the web.
+</li>
+<li>
+    <strong>Tag-based:</strong> HTML uses tags to define elements within a document, like p element for paragraphs and img for images.
+</li>
+<li>
+    <strong>Semantic:</strong> HTML elements convey meaning to browsers and assistive technologies about the purpose of content, aiding accessibility and search engine optimization (SEO).
+</li>
+{% endblock items %}
+
+{% block links %}
+<li><a href="{% url 'CascadingStyleSheets' %}">Cascading Style Sheets</a></li>
+<li><a href="{% url 'JavaScript' %}">JavaScript</a></li>
+{% endblock links %}

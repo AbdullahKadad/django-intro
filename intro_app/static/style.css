@@ -1,0 +1,57 @@
+body{
+    background: #45474B;
+}
+header{
+    padding: 20px;
+}
+header h1{
+    font-size: 32px;
+    color: #F4CE14;
+}
+
+main{
+    background: #30314A;
+    padding: 30px;
+    border-radius: 20px;
+}
+main div p{
+    font-size: 18px;
+    color: #F5F7F8;
+}
+
+main div h3{
+    font-size: 24px;
+    color: #F4CE14;
+}
+main div ul li{
+    font-size: 18px;
+    color: #F5F7F8;
+    padding: 10px 0px ;
+}
+
+footer{
+    padding: 20px;
+}
+
+footer div h5{
+    font-size: 24px;
+    color: #F4CE14;
+}
+
+footer div ul{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+    list-style: none;
+}
+
+footer div ul a{
+    color: #F5F7F8;
+}
+
+footer p {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}
