@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock title %}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+
+<body>
+    <header>
+        <h1>Django Intro-App</h1>
+    </header>
+    <main>
+        <div>
+            <p>
+                This is a dummy app using Django,  
+            </p>
+            <p>
+                I'm using a base HTML template with dynamic data for each page (home, css, js).  
+            </p>
+        </div>
+        <div>
+            <h3>
+                {% block list_title %}{% endblock list_title %}
+            </h3>
+            <ul>
+                {% block items %}
+                {% endblock items %}
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <h5>Other Links</h5>
+            <ul>
+                {% block links %}
+                {% endblock links %}
+            </ul>
+        </div>
+        <p>By Abdullah Qdad</p>
+    </footer>
+</body>
+
+</html>

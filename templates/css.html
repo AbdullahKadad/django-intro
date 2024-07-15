@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}Cascading Style Sheets{% endblock title %}
+{% block list_title %}CSS General Facts{% endblock list_title %}
+{% block items %}
+<li>
+    <strong>Style Definition:</strong> CSS (Cascading Style Sheets) is used to define the presentation (appearance and layout) of HTML elements on web pages.
+</li>
+<li>
+    <strong>Selectors and Properties:</strong> CSS uses selectors to target HTML elements and properties to define how those elements should be styled, such as color, font size, and layout.
+</li>
+<li>
+    <strong>Cascading Nature:</strong> CSS rules can cascade, meaning styles can inherit and override each other based on specificity and order of application, providing flexibility in styling web pages.
+</li>
+{% endblock items %}
+
+{% block links %}
+<li><a href="{% url 'HTML' %}">HTML</a></li>
+<li><a href="{% url 'JavaScript' %}">JavaScript</a></li>
+{% endblock links %}
